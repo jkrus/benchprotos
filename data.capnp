@@ -1,6 +1,6 @@
  @0xf1685067cedef0e0;
-$package("capn");
-$import("github.com/jkrus/benchprotos/capn");
+$package("main");
+$import("github.com/jkrus/benchprotos");
 
 struct Date {
   # A standard Gregorian calendar date.
