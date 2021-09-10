@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package quote.grpc.proto;
+
+option go_package = "github.com/jkrus/benchprotos/grpc/proto/pb";
+
+message Quote {
+  string ask = 1;
+  string bid = 2;
+  float price = 3;
+}

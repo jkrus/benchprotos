@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package quote.grpc.service;
+
+option go_package = "github.com/jkrus/benchprotos/grpc/proto/pb";
+
+import "grpc/proto/quote.proto";
+
+message QuotesUpdateRequest {
+  repeated quote.grpc.proto.Quote quote = 1;
+}
+
+message  QuotesUpdateResponse {
+  string response = 1;
+}
+
+service QuotesService {
+  rpc QuotesUpdate (QuotesUpdateRequest) returns (QuotesUpdateResponse) {};
+}
