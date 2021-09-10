@@ -8,8 +8,8 @@ import (
 	"github.com/evenlab/go-kit/context"
 	"github.com/goava/di"
 
-	"benchprotos/app"
-	"benchprotos/grpc"
+	"github.com/jkrus/benchprotos/app"
+	"github.com/jkrus/benchprotos/grpc"
 )
 
 func main() {
