@@ -16,7 +16,7 @@ generate:
 	protoc \
 		-I=. \
 		--go_out=. \
-		--go_opt=module=github.com/jkrus/benchprotos \
+		--go_opt=module=benchprotos \
 		--go-grpc_out=. \
-		--go-grpc_opt=module=github.com/jkrus/benchprotos \
+		--go-grpc_opt=module=benchprotos \
 		--proto_path=grpc/proto grpc/proto/*.proto

@@ -12,8 +12,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	cfg "github.com/jkrus/benchprotos/config"
-	"github.com/jkrus/benchprotos/grpc/proto/pb"
+	cfg "benchprotos/config"
+	"benchprotos/grpc/proto/pb"
 )
 
 type (

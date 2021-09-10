@@ -5,7 +5,7 @@ package grpc
 import (
 	ctx "github.com/evenlab/go-kit/context"
 
-	"github.com/jkrus/benchprotos/grpc/proto/pb"
+	"benchprotos/grpc/proto/pb"
 )
 
 type (

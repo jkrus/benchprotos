@@ -1,4 +1,4 @@
-module github.com/jkrus/benchprotos
+module benchprotos
 
 go 1.16
 

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ping.proto;
 
-option go_package = "github.com/jkrus/benchprotos/grpc/proto/pb";
+option go_package = "benchprotos/grpc/proto/pb";
 
 message PingPongRequest {
   string pingMessage = 1;

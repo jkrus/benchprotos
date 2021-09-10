@@ -6,7 +6,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/jkrus/benchprotos/grpc/proto/pb"
+	"benchprotos/grpc/proto/pb"
 )
 
 // QuotesUpdate implements service api interface.

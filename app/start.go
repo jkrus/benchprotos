@@ -9,7 +9,7 @@ import (
 	"github.com/goava/di"
 	"github.com/urfave/cli/v2"
 
-	"github.com/jkrus/benchprotos/grpc"
+	"benchprotos/grpc"
 )
 
 // addStartCommand appends start action to application.
