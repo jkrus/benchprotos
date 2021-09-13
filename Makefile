@@ -20,3 +20,17 @@ generate:
 		--go-grpc_out=. \
 		--go-grpc_opt=module=benchprotos \
 		--proto_path=grpc/proto grpc/proto/*.proto
+
+	capnp compile \
+		--import-path=. \
+		--output=go   crpc/cproto/*.capnp
+
+	mv crpc/cproto/*.go crpc/cpb
+
+gen id:
+			capnp compile \
+            --import-path=. \
+             -ocapnp   crpc/cproto/*.capnp
+
+
+

@@ -1,6 +1,8 @@
 package main
 
 import (
+	"log"
+
 	"benchprotos/grpc/proto/pb"
 	"benchprotos/grpc_client/client"
 )
@@ -8,6 +10,7 @@ import (
 func main()  {
 
 	quotes := []*pb.Quote{{Ask: "ETH", Bid: "BTC", Price: 123}}
-	client.QuotesUpdate(quotes)
-
+	if err := client.QuotesUpdate(quotes); err != nil {
+		log.Println("quotes update failed", err)
+	}
 }

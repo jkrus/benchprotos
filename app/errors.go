@@ -7,14 +7,10 @@ import (
 )
 
 const (
-	errStartApplicationMsg  = "start application"
 	errProvideCliContextMsg = "provide cli context"
 	errStartServiceGRPCMsg  = "start service grpc"
+	errStartServiceCRPCMsg  = "start service crpc"
 )
-
-func ErrStartApplication(w error) error {
-	return errors.WrapErr(errStartApplicationMsg, w)
-}
 
 func ErrProvideCliContext(w error) error {
 	return errors.WrapErr(errProvideCliContextMsg, w)
@@ -22,4 +18,8 @@ func ErrProvideCliContext(w error) error {
 
 func ErrStartServiceGRPC(w error) error {
 	return errors.WrapErr(errStartServiceGRPCMsg, w)
+}
+
+func ErrStartServiceCRPC(w error) error {
+	return errors.WrapErr(errStartServiceCRPCMsg, w)
 }

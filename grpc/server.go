@@ -68,7 +68,7 @@ func (s *service) Serve(ctx context.Context) {
 	go s.serve(served)
 
 	<-served
-	log.Println("grpc service start complete")
+	log.Printf("grpc service start complete on port %v\n", cfg.AppDefaultPortGRPC)
 }
 
 // Stop stops grpc service.

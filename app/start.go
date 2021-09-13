@@ -9,6 +9,7 @@ import (
 	"github.com/goava/di"
 	"github.com/urfave/cli/v2"
 
+	"benchprotos/crpc"
 	"benchprotos/grpc"
 )
 
@@ -44,6 +45,10 @@ func invokeServices(dic *di.Container) error {
 	// invoke grpc service starter
 	if err := dic.Invoke(grpc.Start); err != nil {
 		return ErrStartServiceGRPC(err)
+	}
+	// invoke cpc service starter
+	if err := dic.Invoke(crpc.Start); err != nil {
+		return ErrStartServiceCRPC(err)
 	}
 
 	return nil

@@ -9,6 +9,7 @@ import (
 	"github.com/goava/di"
 
 	"benchprotos/app"
+	"benchprotos/crpc"
 	"benchprotos/grpc"
 )
 
@@ -18,7 +19,8 @@ func main() {
 	c, err := di.New(
 		di.Provide(app.NewApp),         // provide the app
 		di.Provide(context.NewContext), // provide the app context
-		di.Provide(grpc.NewService),    // provide the app network service
+		di.Provide(grpc.NewService),    // provide the app network grpc service
+		di.Provide(crpc.NewService),    // provide the app network crpc service
 	)
 	if err != nil {
 		log.Fatal(err)
